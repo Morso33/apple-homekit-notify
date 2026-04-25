@@ -17,6 +17,7 @@
     </td>
   </tr>
   <tr>
+        <td width="20"></td>
     <td align="left" valign="bottom">
       <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
     </td>
