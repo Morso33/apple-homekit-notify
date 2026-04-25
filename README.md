@@ -9,6 +9,7 @@
 <p align="center">
   <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
   &nbsp;&nbsp;
+  <img src="docs/images/homekitbrr.png" width="320" alt="iOS homekit workflow example" />
   <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
 </p>
 
