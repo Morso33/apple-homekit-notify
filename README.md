@@ -11,14 +11,12 @@
     <td align="center" valign="middle" rowspan="2">
       <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
     </td>
-    <td width="20"></td>
-    <td align="left" valign="top">
+    <td align="right" valign="top">
       <img src="docs/images/homekitbrr.png" width="320" alt="iOS homekit workflow example" />
     </td>
   </tr>
   <tr>
-        <td width="20"></td>
-    <td align="left" valign="bottom">
+    <td align="right" valign="bottom">
       <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
     </td>
   </tr>
