@@ -1,5 +1,7 @@
 # HomeKit Notify
 
+https://morso33.github.io/apple-homekit-notify/public/
+
 **HomeKit Notify** is a self-hosted Node.js server that bridges Apple HomeKit automations and Web Push notifications. Open the web app on your iPhone (added to your Home Screen), tap **Enable Notifications**, and you'll receive a unique webhook URL. Paste that URL into any HomeKit automation — or any HTTP-capable tool — and your phone will receive a native push notification every time it's triggered.
 
 ---
