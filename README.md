@@ -6,12 +6,21 @@
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
-  &nbsp;&nbsp;
-  <img src="docs/images/homekitbrr.png" width="320" alt="iOS homekit workflow example" />
-  <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
-</p>
+<table>
+  <tr>
+    <td align="center" valign="middle" rowspan="2">
+      <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
+    </td>
+    <td align="right" valign="top">
+      <img src="docs/images/homekitbrr.png" width="320" alt="iOS homekit workflow example" />
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="bottom">
+      <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
+    </td>
+  </tr>
+</table>
 
 ---
 
