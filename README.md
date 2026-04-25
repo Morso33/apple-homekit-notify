@@ -7,7 +7,6 @@
 ## Screenshots
 
 <table>
-  <tr>
 <div style="display: flex; gap: 16px; align-items: center;">
   <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
 
