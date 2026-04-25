@@ -50,32 +50,8 @@ npm install
 npm start
 ```
 
-The server listens on port **3001** by default. Override with the `PORT` environment variable:
-
-```bash
-PORT=8080 npm start
-```
-
+The server listens on port **3001** by default.
 ---
-
-## VAPID Keys
-
-VAPID keys are required for Web Push. On first start the server auto-generates a key pair and saves it to `vapid.json`. To supply your own keys (recommended for production), set environment variables instead:
-
-```bash
-VAPID_PUBLIC_KEY=<your-public-key> VAPID_PRIVATE_KEY=<your-private-key> npm start
-```
-
-You can generate a key pair with:
-
-```bash
-node -e "const wp = require('web-push'); console.log(wp.generateVAPIDKeys())"
-```
-
-> **Note:** The VAPID contact email is hardcoded to `admin@domain.com` in `server.js`. Change it to your own email before deploying — some push services enforce this.
-
----
-
 ## iOS Setup (Important)
 
 iOS Safari does **not** support Web Push in the normal browser. You must:
@@ -85,7 +61,7 @@ iOS Safari does **not** support Web Push in the normal browser. You must:
 3. Open the app from your Home Screen.
 4. Tap **Enable Notifications** and allow when prompted.
 
-You will then see your unique webhook URL. Tap **Copy**.
+You will then see your unique webhook URL. Tap **Copy**. This is only required when subscribing for the first time. After that, you can use whatever browser you want (even outside homekit).
 
 ---
 
@@ -109,34 +85,35 @@ If omitted, the defaults are:
 - **title:** `HomeKit Alert`
 - **body:** `A HomeKit automation was triggered.`
 
----
-
-## API Reference
-
-| Method | Path | Description |
-|--------|------|-------------|
-| `GET` | `/vapid-public-key` | Returns the server's VAPID public key as JSON. |
-| `POST` | `/subscribe` | Registers a push subscription. Body: `{ subscription, label }`. Returns `{ id, webhookUrl }`. |
-| `GET` | `/notify/:id` | Triggers a push notification. Query params: `title`, `body`. |
+- You can modify the above parameters to create custom notifications
 
 ---
 
-## Project Structure
-
-```
-.
-├── server.js          # Express server — VAPID, subscription management, push delivery
-├── package.json
-├── public/
-│   ├── index.html     # Web UI (Tailwind CSS, dark theme, mobile-first)
-│   ├── app.js         # Client-side subscription logic, cookie persistence
-│   └── sw.js          # Service Worker — receives push events, shows notifications
-├── subscriptions.json # Auto-created; stores active push subscriptions
-└── vapid.json         # Auto-created; stores generated VAPID keys
-```
-
----
 
 ## License
 
-MIT
+Custom Non-Commercial Use License
+
+Copyright (c) 2026 Morso33
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to use,
+copy, modify, merge, publish, and distribute the Software, subject to the
+following conditions:
+
+Conditions
+The Software may be used for personal, educational, research, and
+non-commercial purposes only.
+You may not sell, sublicense, or commercially distribute the Software,
+or any substantial portion of it, in original or modified form.
+You must include this license and copyright notice in all copies or
+substantial portions of the Software.
+Disclaimer
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
