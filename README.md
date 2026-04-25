@@ -7,14 +7,20 @@
 ## Screenshots
 
 <table>
-<div style="display: flex; gap: 16px; align-items: center;">
-  <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
-
-  <div style="display: flex; flex-direction: column; gap: 16px;">
-    <img src="docs/images/homekitbrr.png" width="320" alt="iOS homekit workflow example" />
-    <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
-  </div>
-</div>
+  <tr>
+    <td align="center" valign="middle" rowspan="2">
+      <img src="docs/images/frontpage.png" width="320" alt="HomeKit Notify web UI" />
+    </td>
+    <td width="20"></td>
+    <td align="left" valign="top">
+      <img src="docs/images/homekitbrr.png" width="320" alt="iOS homekit workflow example" />
+    </td>
+  </tr>
+  <tr>
+    <td align="left" valign="bottom">
+      <img src="docs/images/ios-notification.png" width="320" alt="iOS push notification example" />
+    </td>
+  </tr>
 </table>
 
 ---
